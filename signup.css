@@ -1,0 +1,119 @@
+
+body {
+    /* background: linear-gradient(135deg, #449d76, rgb(43, 115, 174), #d8706c);  */
+    background: linear-gradient(135deg, #2faf80, #2a5298, #fb986e);
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Enhanced box shadow */
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9); /* Hover effect for shadow */
+    /* transform: translateY(-5px); */
+}
+
+.signup-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row input, .form-row select {
+    width: 48%;
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4a5cd0;
+    outline: none;
+}
+
+button {
+    background-color: #ff7e5f; /* Button color */
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #7bfec1;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+.signup-message{
+    color: rgb(39, 106, 91);
+    text-align: center;
+    margin: 20px;
+    
+}
+.regi-tab{
+    display: flex;
+    justify-content: space-evenly;
+}
+.regi-tab a{
+   text-decoration: none;
+   color: #333; /* Default color */
+    font-size: 24px;
+    padding: 10px;
+    display: inline-block;
+}
+.regi-tab a.active {
+    color: rgba(21, 25, 233, 0.718); /* Active color */
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input, .form-row select {
+        width: 90%;
+    }
+
+    .signup-container {
+        width: 90%;
+        padding: 20px;
+    }
+   
+    body{
+        margin: auto;
+      
+        display: flex;
+        flex-direction: column;
+    }
+}
